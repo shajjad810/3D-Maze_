@@ -229,6 +229,7 @@ public class Game extends JFrame implements Runnable{
         g.drawString("Score: " + score, 290, 40); // Show score
         g.drawString("Level: " + currentLevel, 10, 20); // Show level
         g.drawString("Highest Score: " + highestScore, 520, 40); // Show score
+        g.drawString("Menu", 10, 40); // Show menu
         bs.show();
     }
 
