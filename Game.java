@@ -36,7 +36,7 @@ public class Game extends JFrame implements Runnable{
         gameMenu.setBackground(Color.WHITE); // Set background to white
         gameMenu.setForeground(Color.BLACK); // Set text color to black (for visibility)
     
-        JMenuItem restartItem = new JMenuItem("Restart Game");
+        JMenuItem restartItem = new JMenuItem("Restart Level");
         JMenuItem quitItem = new JMenuItem("Quit to Starting Page");
     
         // Add action listeners
@@ -170,7 +170,7 @@ public class Game extends JFrame implements Runnable{
         pixels = ((DataBufferInt)image.getRaster().getDataBuffer()).getData(); //connects image data to pixels
         textures = new ArrayList<Texture>();
         textures.add(Texture.city); //1
-        textures.add(Texture.sea); //2
+        textures.add(Texture.violet); //2
         textures.add(Texture.brick1); //3
         textures.add(Texture.brick2); //4
         textures.add(Texture.brick3); //5
@@ -178,7 +178,7 @@ public class Game extends JFrame implements Runnable{
         textures.add(Texture.diamond); //7
         textures.add(Texture.iron); //8
         textures.add(Texture.dirt); //9
-        textures.add(Texture.welcome); //10
+        textures.add(Texture.trump); //10
         textures.add(Texture.win1); //11
         textures.add(Texture.win2); //12
         Player = new Player(1.5, 14, 1, 0, 0, -.66);
@@ -315,13 +315,13 @@ class Texture
     public static Texture brick1 = new Texture("Texture//brick1.png", 64);
     public static Texture brick2 = new Texture("Texture//brick2.png", 64);
     public static Texture brick3 = new Texture("Texture//brick3.png", 64);
-    public static Texture sea = new Texture("Texture//b2.png",64);
+    public static Texture violet = new Texture("Texture//b2.png",64);
     public static Texture goal = new Texture("Texture//go.png",64);
     public static Texture diamond = new Texture("Texture//diamond.png",64);
     public static Texture dirt = new Texture("Texture//dirt.png",64);
     public static Texture ore = new Texture("Texture//dore.png",64);
     public static Texture iron = new Texture("Texture//iron.png",64);
-    public static Texture welcome = new Texture("Texture//welcome.png",64);
+    public static Texture trump = new Texture("Texture//trump.png",64);
     public static Texture win1 = new Texture("Texture//win1.png",64);
     public static Texture win2 = new Texture("Texture//win2.png",64);
 }
